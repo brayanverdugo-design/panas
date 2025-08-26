@@ -3,7 +3,7 @@ class EventScheduler {
         this.events = this.loadEvents();
         this.selectedDrinks = this.loadDrinksSelection();
         this.drinks = [
-            { id: 1, name: "POKER", price: 21000, category: "beer", image: "images/POKER.jpg", description: "VALOR X6" },
+            { id: 1, name: "POKER", price: 21000, category: "beer", image: "https://www.google.com/imgres?q=POKER&imgurl=https%3A%2F%2Fmercaldas.vtexassets.com%2Farquivos%2Fids%2F1324767%2FCerveza-POKER-6-unds-x330-ml_12579.jpg%3Fv%3D638487838069970000&imgrefurl=https%3A%2F%2Fwww.mercaldas.com%2Fcerveza-poker-6-unds-x330-ml-%2Fp&docid=wpNvLUVoeSCQ9M&tbnid=xSNBcjk180pPLM&vet=12ahUKEwjAjsyooaiPAxXiTjABHWtgAOYQM3oECCYQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwjAjsyooaiPAxXiTjABHWtgAOYQM3oECCYQAA", description: "VALOR X6" },
             { id: 2, name: "AGUILA", price: 21000, category: "beer", image: "images/GUILA.jpeg", description: "VALOR X6" },
             { id: 3, name: "ANDINA", price: 16000, category: "beer", image: "images/ANDINA.jpeg", description: "VALOR X6" },
             { id: 4, name: "CORONA", price: 20000, category: "beer", image: "images/CORONA.jpeg", description: "VALOR X6" },
@@ -335,4 +335,5 @@ style.textContent = `
         opacity: 0.6;
     }
 `;
+
 document.head.appendChild(style);
