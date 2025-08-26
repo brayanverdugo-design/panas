@@ -3,7 +3,7 @@ class EventScheduler {
         this.events = this.loadEvents();
         this.selectedDrinks = this.loadDrinksSelection();
         this.drinks = [
-            { id: 1, name: "POKER", price: 8.50, category: "beer", image: "images/POKER.jpg", description: "VALOR X6" },
+            { id: 1, name: "POKER", price: 21.000, category: "beer", image: "images/POKER.jpg", description: "VALOR X6" },
             { id: 2, name: "AGUILA", price: 9.00, category: "beer", image: "https://jumbo.vtexassets.com/arquivos/ids/444903-1200-1200/Cerveza-Aguila-Lata-330ml-Pack-x6.jpg", description: "VALOR X6" },
             { id: 3, name: "ANDINA", price: 8.00, category: "beer", image: "https://www.latiendacerveceria.com.co/wp-content/uploads/2020/09/andina-330.jpg", description: "VALOR X6" },
             { id: 4, name: "CORONA", price: 7.50, category: "beer", image: "https://jumbo.vtexassets.com/arquivos/ids/444265-1200-1200/Cerveza-Corona-Extra-Botella-x6-x-355ml.jpg", description: "VALOR X6" },
@@ -335,4 +335,5 @@ style.textContent = `
         opacity: 0.6;
     }
 `;
+
 document.head.appendChild(style);
