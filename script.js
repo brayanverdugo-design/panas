@@ -3,16 +3,16 @@ class EventScheduler {
         this.events = this.loadEvents();
         this.selectedDrinks = this.loadDrinksSelection();
         this.drinks = [
-            { id: 1, name: "POKER", price: 21.000, category: "beer", image: "images/POKER.jpg", description: "VALOR X6" },
-            { id: 2, name: "AGUILA", price: 9.00, category: "beer", image: "https://jumbo.vtexassets.com/arquivos/ids/444903-1200-1200/Cerveza-Aguila-Lata-330ml-Pack-x6.jpg", description: "VALOR X6" },
-            { id: 3, name: "ANDINA", price: 8.00, category: "beer", image: "https://www.latiendacerveceria.com.co/wp-content/uploads/2020/09/andina-330.jpg", description: "VALOR X6" },
-            { id: 4, name: "CORONA", price: 7.50, category: "beer", image: "https://jumbo.vtexassets.com/arquivos/ids/444265-1200-1200/Cerveza-Corona-Extra-Botella-x6-x-355ml.jpg", description: "VALOR X6" },
-            { id: 5, name: "CORONA GRANDE", price: 4.50, category: "beer", image: "https://jumbo.vtexassets.com/arquivos/ids/442563/Corona-Grande-Botella-710ml.jpg", description: "VALOR X6" },
-            { id: 6, name: "CLUB COLOMBIA", price: 2.50, category: "beer", image: "https://mercatodo.com.co/wp-content/uploads/2020/06/61904.jpg", description: "VALOR X6" },
-            { id: 7, name: "RON", price: 3.50, category: "spirits", image: "https://www.dislicores.com/media/catalog/product/cache/f1b527582b137a85d38a83d463b2f8a4/r/o/ron-medellin-8-anos-x750ml_1.jpg", description: "VALOR POR LITRO" },
-            { id: 8, name: "VODKA", price: 2.00, category: "spirits", image: "https://licoresmundoverde.com/cdn/shop/products/Vodka_300x.jpg", description: "VALOR POR LITRO" },
-            { id: 9, name: "AGUARDIENTE NECTAR", price: 3.00, category: "spirits", image: "https://licoresburbujas.com/wp-content/uploads/2020/08/aguar_amarillo-de-manzanares.jpg", description: "VALOR POR LITRO" },
-            { id: 10, name: "ANTIOQUEÑO", price: 15.00, category: "spirits", image: "https://www.antioqueno.com.co/wp-content/uploads/2022/01/Tapa-verde-750.jpg", description: "VALOR POR LITRO" }
+            { id: 1, name: "POKER", price: 21000, category: "beer", image: "images/POKER.jpg", description: "VALOR X6" },
+            { id: 2, name: "AGUILA", price: 21000, category: "beer", image: "images/GUILA.jpeg", description: "VALOR X6" },
+            { id: 3, name: "ANDINA", price: 16000, category: "beer", image: "images/ANDINA.jpeg", description: "VALOR X6" },
+            { id: 4, name: "CORONA", price: 20000, category: "beer", image: "images/CORONA.jpeg", description: "VALOR X6" },
+            { id: 5, name: "BUDWEISER", price: 18000, category: "beer", image: "images/BUDWEISER.jpeg", description: "VALOR X6" },
+            { id: 6, name: "CLUB COLOMBIA", price: 25000, category: "beer", image: "images/CLUBCOLOMBIA.jpeg", description: "VALOR X6" },
+            { id: 7, name: "RON", price: 60000, category: "spirits", image: "images/RON.jpeg", description: "VALOR POR LITRO" },
+            { id: 8, name: "VODKA", price: 75000, category: "spirits", image: "images/VODKA.jpeg", description: "VALOR POR LITRO" },
+            { id: 9, name: "AGUARDIENTE NECTAR", price: 45000, category: "spirits", image: "images/AGUARDIENTE.jpeg", description: "VALOR POR LITRO" },
+            { id: 10, name: "ANTIOQUEÑO", price: 65000, category: "spirits", image: "images/ANTIOQUEÑO.jpeg", description: "VALOR POR LITRO" }
         ];
         this.initializeEventListeners();
         this.renderEvents();
@@ -335,5 +335,4 @@ style.textContent = `
         opacity: 0.6;
     }
 `;
-
 document.head.appendChild(style);
