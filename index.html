@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma de Eventos y Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Cronograma de Eventos y Cumpleaños</h1>
+            <p>Organiza y programa todos tus eventos importantes</p>
+        </div>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h2>📝 Agregar Evento</h2>
+                <form id="eventForm">
+                    <div class="form-group">
+                        <label for="eventName">Nombre del evento *</label>
+                        <input type="text" id="eventName" required placeholder="Ej: Cumpleaños de María">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventType">Tipo de evento *</label>
+                        <select id="eventType" required>
+                            <option value="">Seleccionar tipo</option>
+                            <option value="cumpleanos">🎂 Cumpleaños</option>
+                            <option value="evento">🎪 Evento General</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventDate">Fecha *</label>
+                        <input type="date" id="eventDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventTime">Hora (opcional)</label>
+                        <input type="time" id="eventTime">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventDescription">Descripción (opcional)</label>
+                        <textarea id="eventDescription" rows="3" placeholder="Detalles adicionales del evento"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Agregar Evento</button>
+                </form>
+            </div>
+
+            <div class="events-section">
+                <h2>📅 Próximos Eventos</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalEvents">0</div>
+                        <div class="stat-label">Total Eventos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalBirthdays">0</div>
+                        <div class="stat-label">Cumpleaños</div>
+                    </div>
+                </div>
+                <div id="eventsList">
+                    <div class="no-events">
+                        No hay eventos programados. ¡Agrega tu primer evento!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="drinks-section">
+            <h2>🍹 Carta de Bebidas para Eventos</h2>
+            <p class="drinks-subtitle">Selecciona las bebidas perfectas para tu celebración</p>
+            <div class="drinks-grid" id="drinksGrid">
+                </div>
+            <div class="selected-drinks">
+                <h3>🛒 Bebidas Seleccionadas</h3>
+                <div id="selectedDrinksList" class="selected-list">
+                    <p class="no-selection">No has seleccionado bebidas aún</p>
+                </div>
+                <button class="btn clear-selection" onclick="scheduler.clearDrinksSelection()">Limpiar Selección</button>
+            </div>
+        </div>
+
+        <div class="calendar-section">
+            <h2>📆 Vista de Calendario</h2>
+            <div class="calendar" id="calendar">
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
